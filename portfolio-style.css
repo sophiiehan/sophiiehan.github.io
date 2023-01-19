@@ -1,0 +1,106 @@
+/* establishing custom fonts as a font family*/
+@font-face {
+    font-family: C2;
+    src: url(fonts/C2.ttf);
+}
+@font-face {
+    font-family: C3;
+    src: url(fonts/C3.ttf);
+}
+
+/* color variables*/
+:root{
+    --medium-green-color: #ACC8B6;
+    --light-green-color: #CFE1D5;
+    --medium-orange-color: #EBB27E;
+    --light-orange-color: #F0C9A4;
+    --light-cream-color: #FFF2E7;
+    --light-pink-color: #EAAF9C;
+    --dark-green-color: #426445;
+}
+
+body{
+    background-image: url(images/portfoliobackground.png);
+    background-color: var(--light-green-color);
+}
+.portfolio-background-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-intro h1{
+    background: rgba(234, 175, 156, 0.5);
+    padding: 10px;
+    box-shadow: 0px 16px 19px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1vh;
+    width: 25vw;
+    text-align: center;
+    font-family: C2;
+    color: var(--light-cream-color);
+    font-weight: 400;
+    padding: 3vh;
+}
+
+.portfolio-intro-text{
+    font-family: C2;
+    width: 40vw;
+    color: var(--light-pink-color);
+    font-weight: 400;
+    line-height: 180.9%;
+    text-align: center;
+    padding: 2vh;
+    background: rgba(255, 242, 231, 0.5);
+    border-radius: 4vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.landscape-section{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+}
+.title-section h2{
+    text-align: center;
+    background-color: rgba(240, 201, 164, 0.6);
+    width: 15vw;
+    font-family: C2;
+    color: var(--light-cream-color);
+    padding: 15px;
+    border-radius: 3vh;
+    box-shadow: 0px 16px 19px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    margin-bottom: 10vh;
+}
+
+.landscape-image-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 4vw;
+}
+.landscape-image-container img{
+    width: 70vh;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.home-button{
+    position: fixed;
+    top:4vh;
+    right:5vh;
+    width:10vh;
+    height:10vh;
+    background: var(--light-cream-color);
+    border-radius: 5vh;
+}
+.home-button img{
+    width: 8vh;
+    margin-left: 1vh;
+    margin-top: 0.5vh;
+}
